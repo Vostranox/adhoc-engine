@@ -1,0 +1,60 @@
+Scene: ManyCubes
+Entities:
+  - Entity: 12884901888
+    Tag:
+      tag: Runtime Camera
+    Camera3D:
+      eye position: [0, 0, -8]
+      focus position: [0, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.54702783
+      nearZ: 1
+      farZ: 100
+      is runtime camera: true
+      is scene camera: false
+  - Entity: 8589934592
+    Tag:
+      tag: Main Camera
+    Camera3D:
+      eye position: [0, 20, -80]
+      focus position: [0, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.54702783
+      nearZ: 1
+      farZ: 1000
+      is runtime camera: false
+      is scene camera: true
+  - Entity: 4294967296
+    Tag:
+      tag: Floor
+    Transform:
+      translate: [0, -16.6000004, 50]
+      rotation: [0, 0, 0]
+      scale: [1000, 1, 1000]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 0
+      transparency: 1
+      albedo: [0.0849421024, 0.0849412531, 0.0849412531]
+    Script:
+      name: SpawnCubes.lua
+    RigidBody:
+      mass: 1
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 0
+      entity: 4294967296
+      scale: [1000, 1, 1000]
+      radius: 1
+      half height: 0.5

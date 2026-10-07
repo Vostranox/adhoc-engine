@@ -1,0 +1,90 @@
+Scene: BallThrow
+Entities:
+  - Entity: 17179869184
+    Tag:
+      tag: Runtime Camera
+    Camera3D:
+      eye position: [0, 0, -8]
+      focus position: [0, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.54702783
+      nearZ: 1
+      farZ: 100
+      is runtime camera: true
+      is scene camera: false
+  - Entity: 12884901888
+    Tag:
+      tag: Main Camera
+    Camera3D:
+      eye position: [0, 12.3999996, -34.4000015]
+      focus position: [-6.5999999, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.54702783
+      nearZ: 1
+      farZ: 100
+      is runtime camera: false
+      is scene camera: true
+  - Entity: 8589934592
+    Tag:
+      tag: Player
+    Transform:
+      translate: [-6.71293879, 0, 0]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+    Mesh:
+      name: main_character_kai2.fbx
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 0
+      transparency: 1
+      albedo: [1, 1, 1]
+    Script:
+      name: player.lua
+    RigidBody:
+      mass: 10
+      restitution: 0
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 1
+      entity: 8589934592
+      scale: [1, 1, 1]
+      radius: 1
+      half height: 0.5
+  - Entity: 4294967296
+    Tag:
+      tag: Floor
+    Transform:
+      translate: [0, -2.70833921, 0]
+      rotation: [0, 0, 0]
+      scale: [50, 0.5, 50]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 0
+      transparency: 1
+      albedo: [1, 1, 1]
+    RigidBody:
+      mass: 1
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 0
+      entity: 4294967296
+      scale: [50, 0.5, 50]
+      radius: 1
+      half height: 0.5

@@ -1,0 +1,35 @@
+[submodule "External/Assimp"]
+	path = External/Assimp
+	url = https://github.com/assimp/assimp.git
+[submodule "External/PhysX"]
+	path = External/PhysX
+	url = https://github.com/NVIDIAGameWorks/PhysX.git
+	ignore = untracked
+[submodule "External/openal-soft"]
+	path = External/openal-soft
+	url = https://github.com/kcat/openal-soft.git
+[submodule "External/ImGui"]
+	path = External/ImGui
+	url = https://github.com/ocornut/imgui.git
+	branch = docking
+[submodule "External/ImGuizmo"]
+	path = External/ImGuizmo
+	url = https://github.com/CedricGuillemet/ImGuizmo.git
+[submodule "External/yaml-cpp"]
+	path = External/yaml-cpp
+	url = https://github.com/jbeder/yaml-cpp.git
+[submodule "External/stb"]
+	path = External/stb
+	url = https://github.com/nothings/stb.git
+[submodule "External/adhoc-entity"]
+	path = External/adhoc-entity
+	url = https://github.com/Vostranox/adhoc-entity.git
+[submodule "External/adhoc-event"]
+	path = External/adhoc-event
+	url = https://github.com/Vostranox/adhoc-event.git
+[submodule "External/adhoc-math"]
+	path = External/adhoc-math
+	url = https://github.com/Vostranox/adhoc-math.git
+[submodule "External/adhoc-script"]
+	path = External/adhoc-script
+	url = https://github.com/Vostranox/adhoc-script.git

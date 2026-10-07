@@ -1,0 +1,165 @@
+Scene: Raycasting
+Entities:
+  - Entity: 30064771072
+    Tag:
+      tag: box1
+    Transform:
+      translate: [5.66977978, 0, -3.54358077]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 0
+      transparency: 1
+      albedo: [1, 1, 1]
+    RigidBody:
+      mass: 1
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 0
+      entity: 30064771072
+      scale: [1, 1, 1]
+      radius: 1
+      half height: 0.5
+  - Entity: 25769803776
+    Tag:
+      tag: box2
+    Transform:
+      translate: [-4.08181286, 0, -3.28002071]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 0
+      transparency: 1
+      albedo: [1, 1, 1]
+    RigidBody:
+      mass: 1
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 0
+      entity: 25769803776
+      scale: [1, 1, 1]
+      radius: 1
+      half height: 0.5
+  - Entity: 21474836480
+    Tag:
+      tag: box3
+    Transform:
+      translate: [4.2969594, 0, 8.78279877]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 0
+      transparency: 1
+      albedo: [1, 1, 1]
+    RigidBody:
+      mass: 1
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 0
+      entity: 21474836480
+      scale: [1, 1, 1]
+      radius: 1
+      half height: 0.5
+  - Entity: 17179869184
+    Tag:
+      tag: box4
+    Transform:
+      translate: [-4.43641233, 0, 8.78399849]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 0
+      transparency: 1
+      albedo: [1, 1, 1]
+    RigidBody:
+      mass: 1
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 0
+      entity: 17179869184
+      scale: [1, 1, 1]
+      radius: 1
+      half height: 0.5
+  - Entity: 12884901888
+    Tag:
+      tag: Runtime Camera
+    Camera3D:
+      eye position: [0, 0, -8]
+      focus position: [0, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.54702783
+      nearZ: 1
+      farZ: 100
+      is runtime camera: true
+      is scene camera: false
+  - Entity: 8589934592
+    Tag:
+      tag: Main Camera
+    Camera3D:
+      eye position: [-7, 8, -14]
+      focus position: [0, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.54702783
+      nearZ: 1
+      farZ: 100
+      is runtime camera: false
+      is scene camera: true
+  - Entity: 4294967296
+    Tag:
+      tag: Monkey
+    Transform:
+      translate: [0, 0, 0]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+    Mesh:
+      name: suzanne.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 0
+      transparency: 1
+      albedo: [1, 1, 1]
+    Script:
+      name: monkey.lua

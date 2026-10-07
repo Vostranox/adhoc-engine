@@ -1,0 +1,11 @@
+# A 2 by 2 quad in the XY plane, facing +Z, with texture coordinates from 0 to 1
+v -1.0 -1.0 0.0
+v 1.0 -1.0 0.0
+v -1.0 1.0 0.0
+v 1.0 1.0 0.0
+vt 0.0 0.0
+vt 1.0 0.0
+vt 1.0 1.0
+vt 0.0 1.0
+vn 0.0 0.0 1.0
+f 1/1/1 2/2/1 4/3/1 3/4/1

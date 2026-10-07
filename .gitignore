@@ -1,0 +1,10 @@
+/build/
+/CMakeUserPresets.json
+/compile_commands.json
+
+/.cache/
+/.vs/
+
+.DS_Store
+Thumbs.db
+Desktop.ini

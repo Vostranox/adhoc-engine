@@ -1,0 +1,167 @@
+Scene: test
+Entities:
+  - Entity: 30064771072
+    Tag:
+      tag: New Entity(6)
+    Transform:
+      translate: [-6.18688679, 0.236483455, 15.5435028]
+      rotation: [0, 0, 0]
+      scale: [0.764348805, 2.39435554, 3.90771341]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 1
+      transparency: 1
+      albedo: [0, 1, 0.154761553]
+    Script:
+      name: goal.lua
+    RigidBody:
+      mass: 10
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 1
+      entity: 30064771072
+      scale: [0.764350295, 2.39435458, 3.90771365]
+      radius: 1
+      half height: 0.5
+  - Entity: 25769803776
+    Tag:
+      tag: New Entity(5)
+    Transform:
+      translate: [5.85827923, 0.783229351, 4.98618412]
+      rotation: [0, 0, 0]
+      scale: [1, 2.92964292, 7.05320549]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 1
+      transparency: 1
+      albedo: [0, 0.107177496, 1]
+    RigidBody:
+      mass: 1
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 0
+      entity: 25769803776
+      scale: [1, 2.92964292, 7.05320549]
+      radius: 1
+      half height: 0.5
+  - Entity: 21474836480
+    Tag:
+      tag: New Entity(4)
+    Transform:
+      translate: [0, -8.83746529, 20]
+      rotation: [0, 0, 0]
+      scale: [20, 1, 20]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 1
+      transparency: 1
+      albedo: [0.239382267, 0.239379868, 0.239379868]
+    RigidBody:
+      mass: 1
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 0
+      entity: 21474836480
+      scale: [10, 1, 20]
+      radius: 1
+      half height: 0.5
+  - Entity: 17179869184
+    Tag:
+      tag: Player
+    Transform:
+      translate: [0, -4.5, 0]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+    Mesh:
+      name: suzanne.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 1
+      transparency: 1
+      albedo: [1, 0, 0]
+    Script:
+      name: movement.lua
+  - Entity: 12884901888
+    Tag:
+      tag: Main Camera
+    Camera3D:
+      eye position: [0, 10, -21.2999992]
+      focus position: [0, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.54702783
+      nearZ: 1
+      farZ: 100
+      is runtime camera: false
+      is scene camera: true
+  - Entity: 8589934592
+    Tag:
+      tag: Runtime Camera
+    Camera3D:
+      eye position: [0, 10, -21]
+      focus position: [0, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.54702783
+      nearZ: 1
+      farZ: 100
+      is runtime camera: true
+      is scene camera: false
+  - Entity: 4294967296
+    Tag:
+      tag: New Entity(7)
+    Transform:
+      translate: [-3.37275529, -1.19330096, 6.29220486]
+      rotation: [0, 0, 0]
+      scale: [3.0999999, 3.0999999, 0.5]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.600000024
+      metallicness: 1
+      transparency: 1
+      albedo: [1, 0, 0]
+    RigidBody:
+      mass: 1
+      restitution: 1
+      static friction: 0.5
+      dynamic friction: 0.5
+      is trigger: false
+      is kinematic: false
+      scale is same as model: true
+      collider type: 0
+      collider shape: 0
+      body type: 0
+      entity: 4294967296
+      scale: [3.0999999, 1.79999995, 0.5]
+      radius: 1
+      half height: 0.5

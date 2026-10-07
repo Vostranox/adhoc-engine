@@ -1,0 +1,105 @@
+Scene: ManyLights
+Entities:
+  - Entity: 30064771072
+    Tag:
+      tag: Floor
+    Transform:
+      translate: [0, -0.25, 0]
+      rotation: [0, 0, 0]
+      scale: [34, 0.25, 34]
+    Mesh:
+      name: cube.obj
+      draw: true
+    Material:
+      roughness: 0.8
+      metallicness: 0
+      transparency: 1
+      albedo: [0.08, 0.08, 0.08]
+      emissive: 0
+      height scale: 0
+      ambient occlusion: 1
+  - Entity: 25769803776
+    Tag:
+      tag: Sphere Left
+    Transform:
+      translate: [-8, 1.5, 0]
+      rotation: [0, 0, 0]
+      scale: [1.5, 1.5, 1.5]
+    Mesh:
+      name: sphere.obj
+      draw: true
+    Material:
+      roughness: 0.8
+      metallicness: 0
+      transparency: 1
+      albedo: [0.9, 0.9, 0.9]
+      emissive: 0
+      height scale: 0
+      ambient occlusion: 1
+  - Entity: 21474836480
+    Tag:
+      tag: Sphere Middle
+    Transform:
+      translate: [0, 1.5, 0]
+      rotation: [0, 0, 0]
+      scale: [1.5, 1.5, 1.5]
+    Mesh:
+      name: sphere.obj
+      draw: true
+    Material:
+      roughness: 0.5
+      metallicness: 0.5
+      transparency: 1
+      albedo: [0.9, 0.9, 0.9]
+      emissive: 0
+      height scale: 0
+      ambient occlusion: 1
+  - Entity: 17179869184
+    Tag:
+      tag: Sphere Right
+    Transform:
+      translate: [8, 1.5, 0]
+      rotation: [0, 0, 0]
+      scale: [1.5, 1.5, 1.5]
+    Mesh:
+      name: sphere.obj
+      draw: true
+    Material:
+      roughness: 0.3
+      metallicness: 1
+      transparency: 1
+      albedo: [0.9, 0.9, 0.9]
+      emissive: 0
+      height scale: 0
+      ambient occlusion: 1
+  - Entity: 12884901888
+    Tag:
+      tag: Main Camera
+    Camera3D:
+      eye position: [-18, 24, -40]
+      focus position: [0, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.5
+      nearZ: 1
+      farZ: 1000
+      is runtime camera: false
+      is scene camera: true
+  - Entity: 8589934592
+    Tag:
+      tag: Runtime Camera
+    Camera3D:
+      eye position: [0, 16, -34]
+      focus position: [0, 0, 0]
+      up vector: [0, 1, 0]
+      field of view: 45
+      aspect ratio: 1.5
+      nearZ: 1
+      farZ: 100
+      is runtime camera: true
+      is scene camera: false
+  - Entity: 4294967296
+    Tag:
+      tag: Lights
+    Script:
+      name: SpawnLights.lua
